@@ -12,10 +12,11 @@
     <body>
         <h1>Home!!</h1>
             <nav>
-               <table class="table">
+               <table class="table" border="1" style="width:100%">
                     @include('partials.nav')
                     @yield('content')
                </table>
             </nav>
+            
     </body>    
 </html>
