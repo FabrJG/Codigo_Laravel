@@ -5,6 +5,14 @@
 @section('content')
     <h2>Servicios</h2>
     <tr>
+        <td colspan="4">
+            <a href="{{ route('servicios.create') }}">Nuevo Servicio</a>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="4">Listado de Servicios</th>
+    </tr>
+    <tr>
         @if ($servicios)
             @foreach ($servicios as $servicio)
             <td><a href="{{ route('servicios.show',$servicio) }}">{{ $servicio->titulo }}</a><br>{{$servicio->descripcion}}</td>

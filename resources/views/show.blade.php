@@ -1,9 +1,5 @@
 @extends('layout')
 
-@if ()
-
-@endif
-
 @section('title','Servicio | ' . $servicio->titulo)
 
 @section('content')
